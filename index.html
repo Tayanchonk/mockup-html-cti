@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTI Project Management System</title>
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Brand -->
+                <div>
+                    <h1><a href="#" style="color: white; text-decoration: none;">CTI Project Management</a></h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="desktop-nav">
+                    <div class="flex space-x-4">
+                        <a href="#">Home</a>
+                        <a href="components/showcase.html">Components</a>
+                        <a href="design-system.html">Design System</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#">Home</a>
+            <a href="components/showcase.html">Components</a>
+            <a href="design-system.html">Design System</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="text-center">
+                <h1>CTI Project Management System</h1>
+                <p class="max-w-3xl mx-auto">
+                    Comprehensive project management solution with MVP features for document conversion, 
+                    AI-driven customs formality, job assignment, and performance insights.
+                </p>
+                <div class="mt-8">
+                    <span class="badge">Due Date: September 15, 2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <!-- MVP Overview Grid -->
+        <div class="mb-12">
+            <h2 class="section-title">Project Modules & MVP Features</h2>
+            
+            <!-- Core Modules -->
+            <div class="card-grid mb-8">
+                <!-- Project Management -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Project Management</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Project kick-off, handover, meetings, documentation, and timeline tracking.</p>
+                    <a href="project-management/index.html" class="link-arrow">
+                        Explore Module
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Analysis and Design -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Analysis & Design</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Requirements gathering, UX/UI design, database design, and SRS development.</p>
+                    <a href="analysis-design/index.html" class="link-arrow">
+                        Explore Module
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Feature Development -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Feature Development</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">User authentication, management, and role & permission systems.</p>
+                    <a href="feature-development/index.html" class="link-arrow">
+                        Explore Module
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MVP Features -->
+            <h3 class="section-subtitle">MVP Releases</h3>
+            <div class="mvp-grid mb-8">
+                <!-- MVP1: Smart Document Conversion -->
+                <div class="mvp-card mvp1">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp1">MVP1</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Smart Document Conversion</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Document inbox, OCR & auto data extraction, mapping, classification & tagging.</p>
+                    <a href="mvp1-document-conversion/index.html" class="link-arrow">
+                        View MVP1 Features
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- MVP2: AI Driven Customs -->
+                <div class="mvp-card mvp2">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp2">MVP2</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">AI Driven Customs Formality</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Tariff classifier, declaration conversion, smart forms, real-time tracking.</p>
+                    <a href="mvp2-ai-customs/index.html" class="link-arrow">
+                        View MVP2 Features
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- MVP3: Job Assignment Dashboard -->
+                <div class="mvp-card mvp3">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp3">MVP3</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Job Assignment Dashboard</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Job board, SLA countdown, notifications, templates, recurring jobs.</p>
+                    <a href="mvp3-job-dashboard/index.html" class="link-arrow">
+                        View MVP3 Features
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- MVP4: Performance Insight -->
+                <div class="mvp-card mvp4">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp4">MVP4</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Performance Insight</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Analytics, reports, leaderboards, cost tracking, productivity dashboards.</p>
+                    <a href="mvp4-performance/index.html" class="link-arrow">
+                        View MVP4 Features
+                        <svg class="icon" viewBox="0 0 24 24">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Additional Modules -->
+            <h3 class="section-subtitle">Additional Modules</h3>
+            <div class="module-grid">
+                <a href="deployment-testing/index.html" class="card text-center" style="text-decoration: none;">
+                    <h4 class="font-semibold text-cti-secondary mb-2">Deployment & Testing</h4>
+                    <p style="font-size: 0.875rem;" class="text-cti-secondary-light">DEV/UAT/PROD environments</p>
+                </a>
+                <a href="training/index.html" class="card text-center" style="text-decoration: none;">
+                    <h4 class="font-semibold text-cti-secondary mb-2">Training</h4>
+                    <p style="font-size: 0.875rem;" class="text-cti-secondary-light">Admin & trainer programs</p>
+                </a>
+                <a href="deliverables/index.html" class="card text-center" style="text-decoration: none;">
+                    <h4 class="font-semibold text-cti-secondary mb-2">Document Deliverables</h4>
+                    <p style="font-size: 0.875rem;" class="text-cti-secondary-light">Reports, manuals, architecture</p>
+                </a>
+                <a href="services/index.html" class="card text-center" style="text-decoration: none;">
+                    <h4 class="font-semibold text-cti-secondary mb-2">Services Included</h4>
+                    <p style="font-size: 0.875rem;" class="text-cti-secondary-light">90-day warranty support</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="components/showcase.html">Component Showcase</a>
+                    <a href="design-system.html">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
