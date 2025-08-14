@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP3: Job Assignment Dashboard - CTI Project Management</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1><a href="../index.html" style="color: white; text-decoration: none;">CTI Project Management</a></h1>
+                </div>
+                <div class="desktop-nav">
+                    <div class="flex space-x-4">
+                        <a href="../index.html">Home</a>
+                        <a href="../components/showcase.html">Components</a>
+                        <a href="../design-system.html">Design System</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../components/showcase.html">Components</a>
+            <a href="../design-system.html">Design System</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 0;">
+        <div class="container">
+            <nav style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+                <a href="../index.html" style="color: var(--cti-secondary-light);">Home</a>
+                <span style="color: #d1d5db;">›</span>
+                <span style="color: var(--cti-secondary); font-weight: 500;">MVP3: Job Assignment Dashboard</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, #faf5ff 0%, #e9d5ff 100%); padding: 3rem 0; border-left: 4px solid #8b5cf6;">
+        <div class="container">
+            <div class="flex items-center mb-4">
+                <span class="badge mvp3">MVP3</span>
+                <h1 style="margin-left: 1rem; margin-bottom: 0; font-size: 2.5rem;">Job Assignment Dashboard</h1>
+            </div>
+            <p style="font-size: 1.25rem; color: var(--cti-secondary-light); max-width: 48rem;">
+                Comprehensive job management system with intelligent assignment, SLA tracking, automated notifications, 
+                and escalation mechanisms for optimal workflow efficiency.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <!-- Feature Overview -->
+        <div class="mb-12">
+            <h2 class="section-title">MVP3 Features Overview</h2>
+            <div class="card-grid">
+                <!-- Job Assignment Board -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Job Assignment Board</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Kanban-style dashboard for managing job assignments with drag-and-drop functionality.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Visual job status tracking</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Drag-and-drop assignment</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Priority-based organization</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Team workload visualization</li>
+                    </ul>
+                </div>
+
+                <!-- SLA Countdown Tracker -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">SLA Countdown Tracker</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Real-time SLA monitoring with countdown timers and performance analytics.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Real-time countdown display</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• SLA breach warnings</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Performance metrics</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Historical SLA reports</li>
+                    </ul>
+                </div>
+
+                <!-- Notification & Reminder System -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M15 17h5l-5 5v-5zM4 19h6v2H4zm1-2h3v2H5zm7-1V8l-5 7h10l-5-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Notification & Reminder</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Intelligent notification system with multi-channel alerts and customizable reminders.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Multi-channel notifications</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Customizable alert rules</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Escalation pathways</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Smart reminder scheduling</li>
+                    </ul>
+                </div>
+
+                <!-- Job Type Templates -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Job Type Templates</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Pre-configured job templates with standardized workflows and requirements.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Standard job templates</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Custom template creation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Workflow automation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Template versioning</li>
+                    </ul>
+                </div>
+
+                <!-- Recurring Job Scheduler -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Recurring Job Scheduler</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Automated scheduling system for recurring tasks with flexible timing options.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Flexible scheduling options</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automatic job creation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Schedule conflict detection</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Holiday and blackout dates</li>
+                    </ul>
+                </div>
+
+                <!-- Overdue Jobs Escalation -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Overdue Jobs Escalation</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Automated escalation system for overdue jobs with configurable escalation paths.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automatic escalation triggers</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Multi-level escalation paths</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Manager notifications</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Escalation tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Demo -->
+        <div class="mb-12">
+            <h2 class="section-title">Job Assignment Dashboard Interface</h2>
+            <div class="card" style="padding: 2rem;">
+                <!-- Dashboard Header -->
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; border-bottom: 1px solid #e5e7eb; padding-bottom: 1rem;">
+                    <h3 style="margin: 0;">Team Dashboard</h3>
+                    <div style="display: flex; gap: 1rem;">
+                        <span class="badge mvp3" style="background: var(--cti-accent);">✓ 12 Completed</span>
+                        <span class="badge mvp3" style="background: var(--cti-warning);">⚠ 5 At Risk</span>
+                        <span class="badge mvp3" style="background: var(--cti-error);">🔥 2 Overdue</span>
+                    </div>
+                </div>
+
+                <!-- Kanban Board Simulation -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <!-- Todo Column -->
+                    <div style="background: #f9fafb; border-radius: 0.5rem; padding: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--cti-secondary);">📋 To Do (8)</h4>
+                        <div style="space-y: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid #3b82f6;">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Import Declaration Review</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Due: 2 hours</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid var(--cti-accent);">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Document Classification</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Due: 4 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- In Progress Column -->
+                    <div style="background: #fef3c7; border-radius: 0.5rem; padding: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--cti-secondary);">🔄 In Progress (5)</h4>
+                        <div style="space-y: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid var(--cti-warning);">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Customs Clearance</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Assigned: John D.</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid #8b5cf6;">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Tariff Classification</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Assigned: Sarah M.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Column -->
+                    <div style="background: #dbeafe; border-radius: 0.5rem; padding: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--cti-secondary);">👀 Review (3)</h4>
+                        <div style="space-y: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid #3b82f6;">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Form Validation</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Reviewer: Mike R.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Done Column -->
+                    <div style="background: #dcfce7; border-radius: 0.5rem; padding: 1rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--cti-secondary);">✅ Done (12)</h4>
+                        <div style="space-y: 0.5rem;">
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid var(--cti-accent);">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Document Processing</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Completed: 2h ago</p>
+                            </div>
+                            <div style="background: white; padding: 0.75rem; border-radius: 0.375rem; margin-bottom: 0.5rem; border-left: 3px solid var(--cti-accent);">
+                                <p style="font-weight: 500; margin: 0; font-size: 0.875rem;">Client Notification</p>
+                                <p style="color: var(--cti-secondary-light); margin: 0; font-size: 0.75rem;">Completed: 1h ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLA Performance Metrics -->
+        <div class="mb-12">
+            <h2 class="section-title">SLA Performance Dashboard</h2>
+            <div class="card-grid">
+                <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--cti-accent);">
+                    <h3 style="color: var(--cti-accent);">SLA Compliance</h3>
+                    <p style="font-size: 2.5rem; font-weight: bold; color: var(--cti-accent); margin: 0.5rem 0;">92%</p>
+                    <p class="text-cti-secondary-light">Jobs completed within SLA timeframe</p>
+                </div>
+                <div class="card" style="background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%); border-left: 4px solid var(--cti-warning);">
+                    <h3 style="color: var(--cti-warning);">Average Response Time</h3>
+                    <p style="font-size: 2.5rem; font-weight: bold; color: var(--cti-warning); margin: 0.5rem 0;">2.3h</p>
+                    <p class="text-cti-secondary-light">Mean time to job assignment</p>
+                </div>
+                <div class="card" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid #3b82f6;">
+                    <h3 style="color: #3b82f6;">Active Jobs</h3>
+                    <p style="font-size: 2.5rem; font-weight: bold; color: #3b82f6; margin: 0.5rem 0;">28</p>
+                    <p class="text-cti-secondary-light">Currently in progress across all teams</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Job Template Examples -->
+        <div class="mb-12">
+            <h2 class="section-title">Job Template Library</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>📄 Document Processing</h3>
+                    <p class="text-cti-secondary-light mb-4">Standard document review and processing workflow</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">1. Document receipt validation</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">2. OCR data extraction</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">3. Manual review and correction</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">4. Client notification</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🏭 Customs Clearance</h3>
+                    <p class="text-cti-secondary-light mb-4">Full customs declaration and clearance process</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">1. Declaration preparation</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">2. Customs submission</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">3. Response monitoring</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">4. Clearance confirmation</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🔍 Compliance Audit</h3>
+                    <p class="text-cti-secondary-light mb-4">Periodic compliance review and audit procedures</p>
+                    <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.875rem;">
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">1. Documentation gathering</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">2. Compliance verification</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">3. Risk assessment</li>
+                        <li style="padding: 0.125rem 0; color: var(--cti-secondary-light);">4. Audit report generation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related MVPs -->
+        <div class="mb-12">
+            <h2 class="section-title">Related MVP Modules</h2>
+            <div class="mvp-grid">
+                <a href="../mvp1-document-conversion/index.html" class="mvp-card mvp1" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp1">MVP1</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Document Conversion</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Generates processing tasks for the job assignment system.</p>
+                </a>
+                <a href="../mvp4-performance/index.html" class="mvp-card mvp4" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp4">MVP4</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Performance Insight</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Analyzes job completion metrics and team performance data.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="../index.html">Home</a>
+                    <a href="../components/showcase.html">Component Showcase</a>
+                    <a href="../design-system.html">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
