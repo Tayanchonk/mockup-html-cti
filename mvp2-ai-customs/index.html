@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP2: AI Driven Customs Formality - CTI Project Management</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1><a href="../index.html" style="color: white; text-decoration: none;">CTI Project Management</a></h1>
+                </div>
+                <div class="desktop-nav">
+                    <div class="flex space-x-4">
+                        <a href="../index.html">Home</a>
+                        <a href="../components/showcase.html">Components</a>
+                        <a href="../design-system.html">Design System</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../components/showcase.html">Components</a>
+            <a href="../design-system.html">Design System</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 0;">
+        <div class="container">
+            <nav style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+                <a href="../index.html" style="color: var(--cti-secondary-light);">Home</a>
+                <span style="color: #d1d5db;">›</span>
+                <span style="color: var(--cti-secondary); font-weight: 500;">MVP2: AI Driven Customs Formality</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 3rem 0; border-left: 4px solid #3b82f6;">
+        <div class="container">
+            <div class="flex items-center mb-4">
+                <span class="badge mvp2">MVP2</span>
+                <h1 style="margin-left: 1rem; margin-bottom: 0; font-size: 2.5rem;">AI Driven Customs Formality</h1>
+            </div>
+            <p style="font-size: 1.25rem; color: var(--cti-secondary-light); max-width: 48rem;">
+                Intelligent customs processing with AI-powered tariff classification, automated declaration conversion, 
+                smart form generation, and real-time shipment tracking capabilities.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <!-- Feature Overview -->
+        <div class="mb-12">
+            <h2 class="section-title">MVP2 Features Overview</h2>
+            <div class="card-grid">
+                <!-- Tariff Classifier Assistant -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Tariff Classifier Assistant</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">AI-powered tariff classification system with machine learning algorithms for accurate HS code assignment.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automated HS code suggestion</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Product description analysis</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Classification confidence scoring</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Historical data learning</li>
+                    </ul>
+                </div>
+
+                <!-- Declaration Conversion -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Declaration Conversion</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Automated conversion of shipping documents into customs declaration formats with data validation.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Multi-format document parsing</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Standard declaration templates</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Data validation and verification</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Compliance checking</li>
+                    </ul>
+                </div>
+
+                <!-- Smart Form Generator -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Smart Form Generator</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Dynamic form generation based on shipment type, destination, and regulatory requirements.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Conditional form fields</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Country-specific requirements</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Auto-populated common fields</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Form validation rules</li>
+                    </ul>
+                </div>
+
+                <!-- Real-Time Shipment Tracking -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Real-Time Shipment Tracking</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Comprehensive tracking system with live updates and customs clearance status monitoring.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Live shipment status</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Customs clearance tracking</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automated notifications</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Integration with carrier APIs</li>
+                    </ul>
+                </div>
+
+                <!-- Compliance Management -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Compliance Management</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Automated compliance checking against international trade regulations and customs requirements.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Regulatory database updates</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Compliance risk assessment</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Alert system for violations</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Audit trail maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Duty and Tax Calculator -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Duty & Tax Calculator</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Accurate calculation of customs duties, taxes, and fees based on current rates and trade agreements.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Real-time rate updates</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Trade agreement benefits</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Multi-currency support</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Cost optimization suggestions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Processing Workflow -->
+        <div class="mb-12">
+            <h2 class="section-title">AI Customs Processing Workflow</h2>
+            <div class="card" style="padding: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">1. Document Input</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Receive shipping documents</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">2. AI Analysis</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Extract and classify data</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">3. Form Generation</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Create customs forms</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">4. Compliance Check</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Validate against regulations</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">5. Submission</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Submit to customs</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="badge mvp2" style="padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">6. Tracking</div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Monitor clearance status</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Capabilities -->
+        <div class="mb-12">
+            <h2 class="section-title">Technical Capabilities</h2>
+            <div class="mvp-grid">
+                <div class="card">
+                    <h3>AI & Machine Learning</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0;">🧠 Natural Language Processing</li>
+                        <li style="padding: 0.25rem 0;">🔍 Pattern Recognition</li>
+                        <li style="padding: 0.25rem 0;">📈 Predictive Analytics</li>
+                        <li style="padding: 0.25rem 0;">🎯 Automated Classification</li>
+                        <li style="padding: 0.25rem 0;">📊 Continuous Learning</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>System Integrations</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0;">🌐 Customs Authority APIs</li>
+                        <li style="padding: 0.25rem 0;">🚢 Carrier Management Systems</li>
+                        <li style="padding: 0.25rem 0;">💰 Trade Finance Platforms</li>
+                        <li style="padding: 0.25rem 0;">📋 ERP System Connectors</li>
+                        <li style="padding: 0.25rem 0;">🔔 Notification Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefits Dashboard -->
+        <div class="mb-12">
+            <h2 class="section-title">Key Benefits</h2>
+            <div class="card-grid">
+                <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid var(--cti-accent);">
+                    <h3 style="color: var(--cti-accent);">Time Reduction</h3>
+                    <p style="font-size: 2rem; font-weight: bold; color: var(--cti-accent); margin: 0.5rem 0;">75%</p>
+                    <p class="text-cti-secondary-light">Faster customs processing through automation</p>
+                </div>
+                <div class="card" style="background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border-left: 4px solid #3b82f6;">
+                    <h3 style="color: #3b82f6;">Accuracy Improvement</h3>
+                    <p style="font-size: 2rem; font-weight: bold; color: #3b82f6; margin: 0.5rem 0;">95%</p>
+                    <p class="text-cti-secondary-light">Reduced errors in classification and documentation</p>
+                </div>
+                <div class="card" style="background: linear-gradient(135deg, #fefce8 0%, #fef3c7 100%); border-left: 4px solid var(--cti-warning);">
+                    <h3 style="color: var(--cti-warning);">Cost Savings</h3>
+                    <p style="font-size: 2rem; font-weight: bold; color: var(--cti-warning); margin: 0.5rem 0;">40%</p>
+                    <p class="text-cti-secondary-light">Lower operational costs and penalties</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related MVPs -->
+        <div class="mb-12">
+            <h2 class="section-title">Related MVP Modules</h2>
+            <div class="mvp-grid">
+                <a href="../mvp1-document-conversion/index.html" class="mvp-card mvp1" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp1">MVP1</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Document Conversion</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Provides processed documents as input for customs formality.</p>
+                </a>
+                <a href="../mvp3-job-dashboard/index.html" class="mvp-card mvp3" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp3">MVP3</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Job Assignment</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Manages workflow tasks generated from customs processing.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="../index.html">Home</a>
+                    <a href="../components/showcase.html">Component Showcase</a>
+                    <a href="../design-system.html">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

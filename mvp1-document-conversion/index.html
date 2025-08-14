@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP1: Smart Document Conversion - CTI Project Management</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1><a href="../index.html" style="color: white; text-decoration: none;">CTI Project Management</a></h1>
+                </div>
+                <div class="desktop-nav">
+                    <div class="flex space-x-4">
+                        <a href="../index.html">Home</a>
+                        <a href="../components/showcase.html">Components</a>
+                        <a href="../design-system.html">Design System</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../components/showcase.html">Components</a>
+            <a href="../design-system.html">Design System</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 0;">
+        <div class="container">
+            <nav style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+                <a href="../index.html" style="color: var(--cti-secondary-light);">Home</a>
+                <span style="color: #d1d5db;">›</span>
+                <span style="color: var(--cti-secondary); font-weight: 500;">MVP1: Smart Document Conversion</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); padding: 3rem 0; border-left: 4px solid var(--cti-accent);">
+        <div class="container">
+            <div class="flex items-center mb-4">
+                <span class="badge mvp1">MVP1</span>
+                <h1 style="margin-left: 1rem; margin-bottom: 0; font-size: 2.5rem;">Smart Document Conversion</h1>
+            </div>
+            <p style="font-size: 1.25rem; color: var(--cti-secondary-light); max-width: 48rem;">
+                Automated document processing with OCR technology, intelligent data extraction, 
+                and smart classification system for seamless document workflow management.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <!-- Feature Overview -->
+        <div class="mb-12">
+            <h2 class="section-title">MVP1 Features Overview</h2>
+            <div class="card-grid">
+                <!-- Document Inbox -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Document Inbox</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Centralized inbox for document upload via multiple channels including email integration and file uploads.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Upload via web interface</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Email integration</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• API integration</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Batch processing</li>
+                    </ul>
+                </div>
+
+                <!-- OCR & Auto Data Extraction -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">OCR & Auto Data Extraction</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Advanced OCR technology with AI-powered data extraction for automatic form field population.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Multi-language OCR support</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Field auto-detection</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Data validation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Confidence scoring</li>
+                    </ul>
+                </div>
+
+                <!-- Document Mapping Automatically -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Document Mapping</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Intelligent document mapping system that automatically links extracted data to appropriate form fields.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Template matching</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Field mapping rules</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Custom mapping creation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Mapping validation</li>
+                    </ul>
+                </div>
+
+                <!-- Document Classification & Tagging -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Classification & Tagging</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">AI-powered document classification with automated tagging for efficient organization and retrieval.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Document type detection</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automatic tagging</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Category assignment</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Custom tag creation</li>
+                    </ul>
+                </div>
+
+                <!-- Task Management & Document Actions -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Task Management</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Comprehensive task management system for document processing workflows and action tracking.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Workflow automation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Task assignment</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Progress tracking</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Action notifications</li>
+                    </ul>
+                </div>
+
+                <!-- Processing Analytics -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Processing Analytics</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Real-time analytics and reporting on document processing performance and accuracy metrics.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Processing metrics</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Accuracy reports</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Performance dashboards</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Error tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Workflow Diagram -->
+        <div class="mb-12">
+            <h2 class="section-title">Document Processing Workflow</h2>
+            <div class="card" style="padding: 2rem;">
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: center;">
+                    <div class="badge mvp1" style="padding: 1rem; border-radius: 0.5rem;">1. Upload</div>
+                    <span style="font-size: 1.5rem; color: var(--cti-secondary-light);">→</span>
+                    <div class="badge mvp1" style="padding: 1rem; border-radius: 0.5rem;">2. OCR Scan</div>
+                    <span style="font-size: 1.5rem; color: var(--cti-secondary-light);">→</span>
+                    <div class="badge mvp1" style="padding: 1rem; border-radius: 0.5rem;">3. Extract Data</div>
+                    <span style="font-size: 1.5rem; color: var(--cti-secondary-light);">→</span>
+                    <div class="badge mvp1" style="padding: 1rem; border-radius: 0.5rem;">4. Classify</div>
+                    <span style="font-size: 1.5rem; color: var(--cti-secondary-light);">→</span>
+                    <div class="badge mvp1" style="padding: 1rem; border-radius: 0.5rem;">5. Process</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Specifications -->
+        <div class="mb-12">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="mvp-grid">
+                <div class="card">
+                    <h3>Supported Formats</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0;">📄 PDF documents</li>
+                        <li style="padding: 0.25rem 0;">🖼️ Image files (PNG, JPG, TIFF)</li>
+                        <li style="padding: 0.25rem 0;">📝 Office documents (DOC, DOCX)</li>
+                        <li style="padding: 0.25rem 0;">📊 Spreadsheets (XLS, XLSX)</li>
+                        <li style="padding: 0.25rem 0;">✉️ Email attachments</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Integration Points</h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0;">🔗 REST API endpoints</li>
+                        <li style="padding: 0.25rem 0;">📧 Email server integration</li>
+                        <li style="padding: 0.25rem 0;">☁️ Cloud storage connectors</li>
+                        <li style="padding: 0.25rem 0;">🗃️ Database integration</li>
+                        <li style="padding: 0.25rem 0;">🔔 Webhook notifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related MVPs -->
+        <div class="mb-12">
+            <h2 class="section-title">Related MVP Modules</h2>
+            <div class="mvp-grid">
+                <a href="../mvp2-ai-customs/index.html" class="mvp-card mvp2" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp2">MVP2</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">AI Driven Customs</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Leverages processed documents for customs formality automation.</p>
+                </a>
+                <a href="../mvp3-job-dashboard/index.html" class="mvp-card mvp3" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <span class="badge mvp3">MVP3</span>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Job Assignment</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Manages tasks and workflows generated from document processing.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="../index.html">Home</a>
+                    <a href="../components/showcase.html">Component Showcase</a>
+                    <a href="../design-system.html">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

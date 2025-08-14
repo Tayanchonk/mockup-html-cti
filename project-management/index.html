@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management - CTI Project Management</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav>
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1><a href="../index.html" style="color: white; text-decoration: none;">CTI Project Management</a></h1>
+                </div>
+                <div class="desktop-nav">
+                    <div class="flex space-x-4">
+                        <a href="../index.html">Home</a>
+                        <a href="../components/showcase.html">Components</a>
+                        <a href="../design-system.html">Design System</a>
+                    </div>
+                </div>
+                <div class="mobile-menu-button">
+                    <button onclick="toggleMobileMenu()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="../components/showcase.html">Components</a>
+            <a href="../design-system.html">Design System</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div style="background: white; border-bottom: 1px solid #e5e7eb; padding: 1rem 0;">
+        <div class="container">
+            <nav style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.875rem;">
+                <a href="../index.html" style="color: var(--cti-secondary-light);">Home</a>
+                <span style="color: #d1d5db;">›</span>
+                <span style="color: var(--cti-secondary); font-weight: 500;">Project Management</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div style="background: linear-gradient(135deg, var(--cti-primary) 0%, var(--cti-primary-light) 100%); color: white; padding: 3rem 0;">
+        <div class="container">
+            <div class="flex items-center mb-4">
+                <div class="icon-container" style="background: rgba(255,255,255,0.2);">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                    </svg>
+                </div>
+                <h1 style="margin-left: 1rem; margin-bottom: 0; font-size: 2.5rem;">Project Management</h1>
+            </div>
+            <p style="font-size: 1.25rem; opacity: 0.9; max-width: 48rem;">
+                Comprehensive project management framework covering all phases from kick-off to wrap-up, 
+                including meeting management, documentation, and timeline tracking.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container section">
+        <!-- Feature Overview -->
+        <div class="mb-12">
+            <h2 class="section-title">Project Management Features</h2>
+            <div class="card-grid">
+                <!-- Project Kick-off -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Project Kick-off</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Structured project initiation process with stakeholder alignment and goal setting.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Stakeholder identification</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Project charter creation</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Initial planning session</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Resource allocation</li>
+                    </ul>
+                </div>
+
+                <!-- Handover and Project Wrap-Up -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Handover & Wrap-Up</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Weekly project handover processes and comprehensive project closure procedures.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Weekly handover meetings</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Knowledge transfer sessions</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Final deliverable review</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Project closure documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Ad Hoc Meeting -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Ad Hoc Meetings</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Flexible meeting management for urgent decisions and unplanned discussions.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Quick meeting scheduling</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Urgent decision tracking</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Action item follow-up</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Meeting notes capture</li>
+                    </ul>
+                </div>
+
+                <!-- Minutes of Meeting (MOM) -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Minutes of Meeting</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Comprehensive meeting documentation with automated MOM generation and distribution.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Automated MOM templates</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Action item tracking</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Attendee management</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Decision documentation</li>
+                    </ul>
+                </div>
+
+                <!-- Timeline Tracking -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Timeline Tracking</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Advanced project timeline management with milestone tracking and progress monitoring.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Gantt chart visualization</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Milestone management</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Critical path analysis</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Progress reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Project Documentation -->
+                <div class="card">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Project Documentation</h3>
+                    </div>
+                    <p class="text-cti-secondary-light mb-4">Centralized documentation management for all project artifacts and deliverables.</p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Document versioning</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Template library</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Collaborative editing</li>
+                        <li style="padding: 0.25rem 0; color: var(--cti-secondary-light);">• Access control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Management Workflow -->
+        <div class="mb-12">
+            <h2 class="section-title">Project Management Workflow</h2>
+            <div class="card" style="padding: 2rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                    <div style="text-align: center;">
+                        <div style="background: var(--cti-primary); color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <h4 style="margin: 0;">1. Project Kick-off</h4>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Initialize project with stakeholder alignment</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--cti-primary-light); color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <h4 style="margin: 0;">2. Planning & Setup</h4>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Create timeline, allocate resources</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--cti-accent); color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <h4 style="margin: 0;">3. Execution</h4>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Manage meetings, track progress</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--cti-warning); color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <h4 style="margin: 0;">4. Monitoring</h4>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Timeline tracking, weekly handovers</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--cti-secondary); color: white; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <h4 style="margin: 0;">5. Closure</h4>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--cti-secondary-light);">Project wrap-up and documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features Table -->
+        <div class="mb-12">
+            <h2 class="section-title">Project Management Features Matrix</h2>
+            <div class="card" style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f9fafb;">
+                            <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: var(--cti-secondary);">Feature</th>
+                            <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: var(--cti-secondary);">Description</th>
+                            <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: var(--cti-secondary);">Frequency</th>
+                            <th style="padding: 0.75rem; text-align: left; font-weight: 600; color: var(--cti-secondary);">Stakeholders</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-top: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem; font-weight: 500; color: var(--cti-secondary);">Project Kick-off</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Initial project setup and alignment</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Once per project</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">All stakeholders</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem; font-weight: 500; color: var(--cti-secondary);">Handover Meetings</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Weekly progress review and handover</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Weekly</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Project team</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem; font-weight: 500; color: var(--cti-secondary);">Ad Hoc Meetings</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Urgent decision-making sessions</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">As needed</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Relevant parties</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem; font-weight: 500; color: var(--cti-secondary);">MOM Documentation</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Meeting minutes and action items</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Per meeting</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Meeting attendees</td>
+                        </tr>
+                        <tr style="border-top: 1px solid #e5e7eb;">
+                            <td style="padding: 0.75rem; font-weight: 500; color: var(--cti-secondary);">Timeline Management</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Project schedule and milestone tracking</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Continuous</td>
+                            <td style="padding: 0.75rem; color: var(--cti-secondary-light);">Project manager</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Related Modules -->
+        <div class="mb-12">
+            <h2 class="section-title">Related Modules</h2>
+            <div class="card-grid">
+                <a href="../analysis-design/index.html" class="card" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Analysis & Design</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">Requirements gathering and system design phase following project kick-off.</p>
+                </a>
+                <a href="../deliverables/index.html" class="card" style="text-decoration: none;">
+                    <div class="flex items-center mb-4">
+                        <div class="icon-container">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <h3 style="margin-left: 1rem; margin-bottom: 0;">Document Deliverables</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">All project deliverables and documentation generated throughout the project lifecycle.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="../index.html">Home</a>
+                    <a href="../components/showcase.html">Component Showcase</a>
+                    <a href="../design-system.html">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

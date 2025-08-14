@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Showcase - CTI Project Management</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation Header -->
+    <nav class="bg-cti-primary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="../index.html" class="text-white text-xl font-bold">CTI Project Management</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="../index.html" class="text-gray-300 hover:bg-cti-primary-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" class="text-white hover:bg-cti-primary-light px-3 py-2 rounded-md text-sm font-medium">Components</a>
+                        <a href="../design-system.html" class="text-gray-300 hover:bg-cti-primary-light hover:text-white px-3 py-2 rounded-md text-sm font-medium">Design System</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-4">
+                    <li>
+                        <a href="../index.html" class="text-cti-secondary-light hover:text-cti-primary">Home</a>
+                    </li>
+                    <li>
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                    </li>
+                    <li class="text-cti-secondary font-medium">Component Showcase</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-8 px-4">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-cti-secondary">Component Showcase</h1>
+            <p class="mt-2 text-cti-secondary-light">A comprehensive display of all UI components used in the CTI Project Management System.</p>
+        </div>
+
+        <!-- Color Palette -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Color Palette</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-primary rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Primary</p>
+                    <p class="text-xs text-gray-500">#1e40af</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-primary-light rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Primary Light</p>
+                    <p class="text-xs text-gray-500">#3b82f6</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-secondary rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Secondary</p>
+                    <p class="text-xs text-gray-500">#374151</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-secondary-light rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Secondary Light</p>
+                    <p class="text-xs text-gray-500">#6b7280</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-accent rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Accent</p>
+                    <p class="text-xs text-gray-500">#10b981</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-warning rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Warning</p>
+                    <p class="text-xs text-gray-500">#f59e0b</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-full h-20 bg-cti-error rounded-lg mb-2"></div>
+                    <p class="text-sm font-medium">Error</p>
+                    <p class="text-xs text-gray-500">#ef4444</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Buttons</h2>
+            <div class="space-y-4">
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-cti-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Primary Button
+                    </button>
+                    <button class="bg-cti-secondary hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                        Secondary Button
+                    </button>
+                    <button class="bg-cti-accent hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                        Accent Button
+                    </button>
+                    <button class="bg-cti-warning hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+                        Warning Button
+                    </button>
+                    <button class="bg-cti-error hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+                        Error Button
+                    </button>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <button class="border border-cti-primary text-cti-primary hover:bg-cti-primary hover:text-white font-bold py-2 px-4 rounded">
+                        Outline Primary
+                    </button>
+                    <button class="border border-cti-secondary text-cti-secondary hover:bg-cti-secondary hover:text-white font-bold py-2 px-4 rounded">
+                        Outline Secondary
+                    </button>
+                    <button class="text-cti-primary hover:text-cti-primary-light font-bold py-2 px-4">
+                        Text Button
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Elements -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Form Elements</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md max-w-2xl">
+                <form class="space-y-6">
+                    <div>
+                        <label for="text-input" class="block text-sm font-medium text-cti-secondary">Text Input</label>
+                        <input type="text" id="text-input" name="text-input" placeholder="Enter text..." class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cti-primary focus:border-cti-primary">
+                    </div>
+                    
+                    <div>
+                        <label for="email-input" class="block text-sm font-medium text-cti-secondary">Email Input</label>
+                        <input type="email" id="email-input" name="email-input" placeholder="Enter email..." class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cti-primary focus:border-cti-primary">
+                    </div>
+
+                    <div>
+                        <label for="select" class="block text-sm font-medium text-cti-secondary">Select Dropdown</label>
+                        <select id="select" name="select" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cti-primary focus:border-cti-primary">
+                            <option>Choose an option</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="textarea" class="block text-sm font-medium text-cti-secondary">Textarea</label>
+                        <textarea id="textarea" name="textarea" rows="3" placeholder="Enter description..." class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-cti-primary focus:border-cti-primary"></textarea>
+                    </div>
+
+                    <div class="flex items-center">
+                        <input id="checkbox" name="checkbox" type="checkbox" class="h-4 w-4 text-cti-primary focus:ring-cti-primary border-gray-300 rounded">
+                        <label for="checkbox" class="ml-2 block text-sm text-cti-secondary">
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center">
+                            <input id="radio1" name="radio-group" type="radio" class="h-4 w-4 text-cti-primary focus:ring-cti-primary border-gray-300">
+                            <label for="radio1" class="ml-2 block text-sm text-cti-secondary">Option 1</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="radio2" name="radio-group" type="radio" class="h-4 w-4 text-cti-primary focus:ring-cti-primary border-gray-300">
+                            <label for="radio2" class="ml-2 block text-sm text-cti-secondary">Option 2</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Basic Card -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold text-cti-secondary mb-2">Basic Card</h3>
+                    <p class="text-cti-secondary-light mb-4">This is a basic card component with some content.</p>
+                    <a href="#" class="text-cti-primary hover:text-cti-primary-light font-medium">Learn more →</a>
+                </div>
+
+                <!-- Card with Icon -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-cti-primary text-white rounded-lg p-3">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="ml-4 text-lg font-semibold text-cti-secondary">Card with Icon</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">This card includes an icon in the header.</p>
+                </div>
+
+                <!-- Status Card -->
+                <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg shadow-md p-6 border-l-4 border-cti-accent">
+                    <div class="flex items-center mb-2">
+                        <span class="bg-cti-accent text-white text-xs font-bold px-2 py-1 rounded-full">ACTIVE</span>
+                        <h3 class="ml-3 text-lg font-semibold text-cti-secondary">Status Card</h3>
+                    </div>
+                    <p class="text-cti-secondary-light">This card shows status with colored background and badge.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tables -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Tables</h2>
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-cti-secondary">John Doe</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-cti-secondary-light">Admin</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="#" class="text-cti-primary hover:text-cti-primary-light">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-cti-secondary">Jane Smith</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-cti-secondary-light">User</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                                <a href="#" class="text-cti-primary hover:text-cti-primary-light">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Alerts -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Alerts</h2>
+            <div class="space-y-4">
+                <div class="bg-blue-50 border-l-4 border-blue-400 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-blue-700">
+                                <strong>Info:</strong> This is an informational alert message.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 border-l-4 border-green-400 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-green-700">
+                                <strong>Success:</strong> Your action was completed successfully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-yellow-700">
+                                <strong>Warning:</strong> Please review this information carefully.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border-l-4 border-red-400 p-4">
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-sm text-red-700">
+                                <strong>Error:</strong> There was an error processing your request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Badges -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Badges</h2>
+            <div class="flex flex-wrap gap-2">
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">Primary</span>
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-800">Secondary</span>
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Success</span>
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Warning</span>
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-red-100 text-red-800">Error</span>
+                <span class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-purple-100 text-purple-800">Info</span>
+            </div>
+        </section>
+
+        <!-- Progress Bars -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-cti-secondary mb-6">Progress Bars</h2>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm text-cti-secondary-light mb-1">
+                        <span>Progress</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-cti-primary h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm text-cti-secondary-light mb-1">
+                        <span>Success Progress</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-cti-accent h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm text-cti-secondary-light mb-1">
+                        <span>Warning Progress</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-cti-warning h-2 rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-cti-secondary">
+        <div class="max-w-7xl mx-auto py-8 px-4">
+            <div class="text-center">
+                <p class="text-gray-400">&copy; 2024 CTI Project Management System. All rights reserved.</p>
+                <div class="mt-4 space-x-4">
+                    <a href="../index.html" class="text-gray-300 hover:text-white">Home</a>
+                    <a href="../design-system.html" class="text-gray-300 hover:text-white">Design System</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
