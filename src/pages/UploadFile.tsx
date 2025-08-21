@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const UploadFile: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -39,16 +40,35 @@ const UploadFile: React.FC = () => {
     fileInputRef.current?.click();
   };
 
-  const handleProcess = async () => {
-    if (!selectedFile) return;
+const handleProcess = async () => {
+  console.log("🚀 ~ handleProcess ~ selectedFile:", selectedFile)
+  if (!selectedFile) return;
 
-    setProcessing(true);
-    // Simulate OCR processing
-    setTimeout(() => {
-      setResult(`Extracted text from ${selectedFile.name}:\n\nThis is a sample OCR result. In a real application, this would contain the actual text extracted from your uploaded image or PDF file. The OCR engine would analyze the document and convert any text found into editable format.`);
-      setProcessing(false);
-    }, 3000);
-  };
+  setProcessing(true);
+  
+  try {
+    // สร้าง FormData สำหรับส่งไฟล์แบบ multipart/form-data
+    const formData = new FormData();
+    formData.append('file', selectedFile); // ชื่อ parameter ต้องเป็น 'file' ตามที่ API ต้องการ
+    formData.append('language', 'tha+eng'); // เพิ่ม parameter language ตามที่ API ต้องการ
+    
+    // ส่งข้อมูลไปยัง API โดยใช้ multipart/form-data
+    const response = await axios.post('http://localhost:5000/api/Ocr/upload', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    });
+    
+    // Handle the response
+    console.log("API response:", response.data);
+    setResult(response.data.extractedText || 'No text extracted');
+  } catch (error) {
+    console.error("Error processing document:", error);
+    setResult(`Error processing document: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  } finally {
+    setProcessing(false);
+  }
+};
 
   const handleBackToDashboard = () => {
     navigate('/dashboard');

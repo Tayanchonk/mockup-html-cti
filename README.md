@@ -1,69 +1,108 @@
-# React + TypeScript + Vite
+# OCR Scanner - React TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application for OCR (Optical Character Recognition) processing built with React, TypeScript, and Vite. Features a sleek black-orange theme and intuitive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Login Page** - Simple authentication interface
+- 📊 **Dashboard** - Overview of processing statistics and recent activity
+- 📁 **File Upload** - Drag-and-drop interface for uploading documents
+- 🎨 **Black-Orange Theme** - Modern dark theme with orange accents
+- ⚡ **Fast Development** - Powered by Vite for instant hot-reload
+- 🎯 **TypeScript** - Full type safety throughout the application
 
-## Expanding the ESLint configuration
+## Pages
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. Login (`/`)
+- Clean authentication form
+- Demo mode (any credentials work)
+- Responsive design
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 2. Dashboard (`/dashboard`)
+- Statistics overview
+- Recent activity feed
+- Quick navigation to upload
+- Processing metrics
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 3. Upload File (`/upload`)
+- Drag-and-drop file upload
+- Support for images (JPG, PNG) and PDFs
+- Real-time processing simulation
+- Text extraction results display
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Technology Stack
+
+- **React 18** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Styling framework
+- **React Router** - Client-side routing
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 16+ and npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd mockup-html-cti
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components (Login, Dashboard, UploadFile)
+├── hooks/         # Custom React hooks
+├── utils/         # Utility functions
+├── types/         # TypeScript type definitions
+├── index.css      # Global styles and Tailwind imports
+└── main.tsx       # Application entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Design System
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Colors
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The application uses a custom black-orange color palette:
+
+- **Primary Orange**: `#f97316` (orange-500)
+- **Dark Background**: `#0d1117` (dark-900)
+- **Card Background**: `#212529` (dark-800)
+- **Text**: White and gray variants
+
+### Components
+
+Pre-built Tailwind component classes:
+- `.btn-primary` - Orange primary buttons
+- `.btn-secondary` - Dark secondary buttons
+- `.card` - Dark themed cards
+- `.input-field` - Form inputs with dark theme
+
+## License
+
+This project is licensed under the MIT License.
